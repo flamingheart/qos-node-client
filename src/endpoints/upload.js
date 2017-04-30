@@ -23,7 +23,7 @@ export default function upload({appId, secretId, secretKey, url, bucket: b1}, {f
     b2,
     biz_attr,
     insertOnly,
-    filecontent: fs.createReadStream(localFile),
+    filecontent: typeof localFile==='string' ? fs.createReadStream(localFile) : localFile,
     fileId,
     timestamp,
     expired,

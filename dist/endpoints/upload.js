@@ -36,7 +36,7 @@ function upload({ appId, secretId, secretKey, url, bucket: b1 }, { form: { biz_a
     b2,
     biz_attr,
     insertOnly,
-    filecontent: _fs2.default.createReadStream(localFile),
+    filecontent: typeof localFile === 'string' ? _fs2.default.createReadStream(localFile) : localFile,
     fileId,
     timestamp,
     expired,
