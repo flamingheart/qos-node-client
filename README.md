@@ -3,23 +3,24 @@ Node client for [qos](https://www.qcloud.com/doc/api/435/6052)
 
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-`npm i -S qos-node-client`
+`npm i -S qos-client`
 
 ## Usage
 
 先创建一个qos client:
 
 ```
-import qos from 'qos-node-client';
+import qos from 'qos-client';
 
-// const qos = require('qos-node-client').default;
+// const qos = require('qos-client').default;
 
 const appId = '66666666';
 const secretId = 'hello world';
 const secretKey = '你好，世界';
 const bucket = 'demo';
+const region = 'sh';
 
-const client = qos.createClient({appId, secretId, secretKey, bucket});
+const client = qos.createClient({appId, secretId, secretKey, region, bucket});
 ```
 
 上传:
@@ -92,4 +93,4 @@ client.upload({localFile, fileId})
 
 ## Copyright and license
 
-Code copyright 2016 Youmoo. Code released under [the MIT license](LICENSE).
+Code copyright 2017 theflaming. Code released under [the MIT license](LICENSE).

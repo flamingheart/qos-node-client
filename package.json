@@ -1,6 +1,6 @@
 {
-  "name": "tan-qos-node-client",
-  "version": "0.0.4",
+  "name": "qos-client",
+  "version": "0.0.9",
   "description": "Node client for qos",
   "main": "dist/index.js",
   "scripts": {
@@ -15,10 +15,14 @@
     "tencent",
     "cdn"
   ],
-  "author": "Farzer <huaentan@gmai.com>",
+  "contributors": ["Flames","Farzer <huaentan@gmai.com>","Youmoo <youmoo@vellichor.me> (https://promise.rocks)"],
   "license": "MIT",
   "dependencies": {
     "request": "^2.79.0"
+  },
+  "repository":{
+    "type" : "git",
+    "url" : "https://github.com/theflaming/qos-node-client.git"
   },
   "files": [
     "dist",
